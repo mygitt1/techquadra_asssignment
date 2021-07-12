@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "193231030291",
+    "project_id": "techquadra-b4ba7",
+    "storage_bucket": "techquadra-b4ba7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193231030291:android:b24bda3aa9318f1ad717e6",
+        "android_client_info": {
+          "package_name": "com.example.techquadra_asssignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193231030291-33dnrj79nlrih7pbgbaucaprnsokntsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.techquadra_asssignment",
+            "certificate_hash": "fe19c7bd18d75b983a987d56dd4007a864d4e53e"
+          }
+        },
+        {
+          "client_id": "193231030291-geao48c8ugalg98617fbrrbe83rakgts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoSgqBiIHnzroGVN64IvuXbu37Y5ClLmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193231030291-geao48c8ugalg98617fbrrbe83rakgts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
