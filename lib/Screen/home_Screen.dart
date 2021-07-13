@@ -24,15 +24,15 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text('HomeScreen'),
         actions: [
-          TextButton(
-            onPressed: () {
-              provider.logout();
-            },
-            child: Text(
-              'Logout',
-              style: TextStyle(color: Colors.white),
-            ),
-          ),
+          // TextButton(
+          //   onPressed: () {
+          //     provider.logout();
+          //   },
+          //   child: Text(
+          //     'Logout',
+          //     style: TextStyle(color: Colors.white),
+          //   ),
+          // ),
         ],
       ),
       drawer: Drawer(

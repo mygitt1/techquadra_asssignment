@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:techquadra_asssignment/Screen/auth_screen.dart';
 import 'package:techquadra_asssignment/Screen/home_Screen.dart';
+import 'package:techquadra_asssignment/Screen/newauth_screen.dart';
 import 'package:techquadra_asssignment/provider/auth_service.dart';
 import 'package:techquadra_asssignment/provider/dataprovider.dart';
 
@@ -30,19 +31,20 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: StreamBuilder<Object>(
-            stream: FirebaseAuth.instance.authStateChanges(),
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(child: CircularProgressIndicator());
-              } else if (snapshot.hasData) {
-                return HomeScreen();
-              } else if (snapshot.hasError) {
-                return Center(child: Text('Somthing went wrong'));
-              } else {
-                return AuthScreen();
-              }
-            }),
+        // home: StreamBuilder<Object>(
+        //     stream: FirebaseAuth.instance.authStateChanges(),
+        //     builder: (context, snapshot) {
+        //       if (snapshot.connectionState == ConnectionState.waiting) {
+        //         return Center(child: CircularProgressIndicator());
+        //       } else if (snapshot.hasData) {
+        //         return NewAuthScreen();
+        //       } else if (snapshot.hasError) {
+        //         return Center(child: Text('Somthing went wrong'));
+        //       } else {
+        //         return AuthScreen();
+        //       }
+        //     }),
+        home: AuthScreen(),
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:techquadra_asssignment/Screen/newauth_screen.dart';
 import 'package:techquadra_asssignment/provider/auth_service.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -17,9 +18,11 @@ class AuthScreen extends StatelessWidget {
               onPrimary: Colors.black,
               minimumSize: Size(double.infinity, 60),
             ),
-            onPressed: () {
+            onPressed: () async {
               final provider = Provider.of<AuthService>(context, listen: false);
-              provider.googleSignUp();
+              await provider.googleSignUp();
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (ctx) => NewAuthScreen()));
             },
             icon: FaIcon(
               FontAwesomeIcons.google,

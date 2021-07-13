@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.techquadra_asssignment">
    <application
+        android:usesCleartextTraffic="true"
         android:label="techquadra_asssignment"
         android:icon="@mipmap/ic_launcher">
         <activity
